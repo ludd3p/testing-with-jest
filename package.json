@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Testing with jest",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludd3p/testing-with-jest.git"
+  },
+  "author": "Ludd3p",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludd3p/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/ludd3p/testing-with-jest#readme"
+}
