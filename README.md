@@ -1,2 +1,2 @@
 # testing-with-jest
-LAB 5
+LAB 5 TESTING NPM JEST
