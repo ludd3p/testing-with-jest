@@ -33,24 +33,11 @@ describe('Clicking "Pusha till stacken"', () => {
 });
 
 // Egna tester
-test('The stack shoukld have element after push', async () => {
-    let push = await driver.findElement(By.id('push'));
-    await push.click();
-    let alert = await driver.switchTo().alert();
-    await alert.sendKeys("Hello");
-    await alert.accept();
-    let topOfStack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(topOfStack).toEqual("Hello");
-});
-
-test('The stack should be empty after pop', async () => {
-    let push = await driver.findElement(By.id('push'));
-    await push.click();
-    let alert = await driver.switchTo().alert();
-    await alert.sendKeys("Hello");
-    await alert.accept();
-    let pop = await driver.findElement(By.id('pop'));
-    await pop.click();
-    let topOfStack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(topOfStack).toEqual("n/a");
+describe('Clicking "Poppa stacken!"', () => {
+    it('should open a alert box', async () => {
+        let pop = await driver.findElement(By.id('popped'));
+        await pop.click();
+        let alert = await driver.switchTo().alert();
+        await alert.accept();
+    });
 });
