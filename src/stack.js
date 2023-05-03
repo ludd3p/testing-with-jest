@@ -9,6 +9,6 @@ exports.pop = function () {
     return stack.pop();
 };
 
-expports.peek = function () {
-    return stack[0];
+exports.peek = function () {
+    return _.last(stack);
 };
