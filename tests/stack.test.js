@@ -18,9 +18,9 @@ test('peek on stack with two elements returns the first element', () => {
 
 //Eget test
 test('peek on stack after pop that had two elements returns the first element', () => {
-    stack.push(1);;
+    stack.push(1);
     stack.push(2);
     stack.pop();
-    expect(stack.peek()).toBeUndefined();
-    expect(stack.peek()).toBe("2");
+    expect(stack.peek()).toBeDefined();
+    expect(stack.peek()).toBe(1);
 });

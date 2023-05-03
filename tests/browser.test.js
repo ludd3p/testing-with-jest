@@ -35,7 +35,7 @@ describe('Clicking "Pusha till stacken"', () => {
 // Egna tester
 describe('Clicking "Poppa stacken!"', () => {
     it('should open a alert box', async () => {
-        let pop = await driver.findElement(By.id('popped'));
+        let pop = await driver.findElement(By.id('pop'));
         await pop.click();
         let alert = await driver.switchTo().alert();
         await alert.accept();
